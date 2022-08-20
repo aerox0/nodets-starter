@@ -1,0 +1,22 @@
+{
+	"minify": true,
+	"sourceMaps": "inline",
+	"inlineSourcesContent": true,
+	"jsc": {
+		"parser": {
+			"syntax": "typescript",
+			"tsx": false,
+			"decorators": true,
+			"dynamicImport": true,
+			"topLevelAwait": true
+		},
+		"target": "es2022",
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"]
+		}
+	},
+	"module": {
+		"type": "commonjs"
+	}
+}
