@@ -6,6 +6,7 @@
 		"packages/*",
 		"apps/*"
 	],
+	"packageManager": "yarn@1.22.15",
 	"devDependencies": {
 		"commitizen": "^4.2.5",
 		"cz-conventional-changelog": "3.3.0",
