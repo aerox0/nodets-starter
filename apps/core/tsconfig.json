@@ -1,4 +1,5 @@
 {
+	"$schema": "https://json.schemastore.org/tsconfig",
 	"ts-node": {
 		"files": true,
 		"transpileOnly": true,
@@ -28,9 +29,9 @@
 		"resolveJsonModule": true,
 		"baseUrl": ".",
 		"paths": {
-			"@/*": ["src/*"]
+			"@/*": ["./*"]
 		}
 	},
 	"exclude": ["node_modules"],
-	"include": ["./src/**/*.ts"]
+	"include": ["./"]
 }
