@@ -1,11 +1,12 @@
 {
 	"name": "nodets-starter",
 	"private": true,
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"workspaces": [
 		"packages/*",
 		"apps/*"
 	],
+	"packageManager": "yarn@1.22.15",
 	"devDependencies": {
 		"commitizen": "^4.2.5",
 		"cz-conventional-changelog": "3.3.0",
