@@ -1,0 +1,19 @@
+{
+	"name": "core",
+	"version": "1.0.0",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "swc ../core -d dist node_modules/**/*",
+		"start": "node dist/index.js",
+		"dev": "nodemon -L -e ts --exec \"npm run debug\"",
+		"debug": "ts-node --swc index.ts"
+	},
+	"devDependencies": {
+		"@swc/cli": "^0.1.57",
+		"@swc/core": "^1.2.241",
+		"@types/node": "^18.7.8",
+		"nodemon": "^2.0.19",
+		"ts-node": "^10.9.1",
+		"tsconfig-paths": "^4.1.0"
+	}
+}
