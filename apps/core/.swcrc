@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json.schemastore.org/swcrc",
 	"minify": true,
+	"exclude": "node_modules/",
 	"sourceMaps": "inline",
 	"jsc": {
 		"parser": {

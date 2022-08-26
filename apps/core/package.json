@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"main": "dist/index.js",
 	"scripts": {
-		"build": "swc ../core -d dist node_modules/**/*",
+		"build": "swc $PWD -d dist",
 		"start": "node dist/index.js",
 		"dev": "nodemon -L -e ts --exec \"npm run debug\"",
 		"debug": "ts-node --swc index.ts"
