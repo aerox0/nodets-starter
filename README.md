@@ -3,7 +3,7 @@
 ## Run in development mode:
 
 ```:
-$ docker-compose up
+docker-compose up
 ```
 
 ## Run in production mode:
