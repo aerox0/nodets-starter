@@ -1,0 +1,6 @@
+services:
+  core:
+    build:
+      target: production
+    command: node apps/core/dist/index.js
+    restart: unless-stopped

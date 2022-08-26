@@ -4,10 +4,6 @@ services:
       context: .
       dockerfile: ./apps/core/Dockerfile
       target: development
-    command: yarn dev
     env_file:
       - ./apps/core/.env
-    volumes:
-      - .:/app
-      - /app/node_modules
     restart: on-failure
