@@ -1,6 +1,8 @@
 services:
   core:
+    extends:
+      file: docker-compose.yml
+      service: core
     build:
       target: production
-    command: node apps/core/dist/index.js
     restart: unless-stopped
