@@ -1,3 +1,4 @@
+export {} // remove after importing anything
 const main = async () => {
 	console.log('Hello, world!')
 }

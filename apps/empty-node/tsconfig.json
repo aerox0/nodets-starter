@@ -1,0 +1,8 @@
+{
+	"ts-node": {
+		"files": true,
+		"transpileOnly": true
+	},
+	"extends": "@w/tsconfig/node.json",
+	"include": ["."]
+}

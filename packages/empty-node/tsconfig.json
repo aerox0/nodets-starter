@@ -1,0 +1,12 @@
+{
+	"ts-node": {
+		"files": true,
+		"transpileOnly": true
+	},
+	"compilerOptions": {
+		"outDir": "dist"
+	},
+	"extends": "@w/tsconfig/node.json",
+	"exclude": ["node_modules"],
+	"include": ["src"]
+}

@@ -1,8 +1,8 @@
 services:
-  core:
+  empty-node:
     extends:
       file: docker-compose.yml
-      service: core
+      service: empty-node
     build:
       target: production
     restart: unless-stopped

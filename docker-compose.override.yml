@@ -1,6 +1,6 @@
 services:
-  core:
-    command: yarn dev
+  empty-node:
+    command: yarn dev --filter=empty-node
     volumes:
       - .:/app
       - /app/node_modules

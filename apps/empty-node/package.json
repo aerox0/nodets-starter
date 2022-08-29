@@ -1,20 +1,21 @@
 {
-	"name": "core",
+	"name": "empty-node",
 	"version": "1.0.0",
 	"main": "dist/index.js",
 	"scripts": {
 		"build": "swc src -d dist",
 		"start": "node dist/index.js",
 		"dev": "nodemon -L -e ts --exec \"npm run debug\"",
-		"debug": "ts-node --swc src/index.ts"
+		"debug": "ts-node --swc src/index.ts",
+		"clean": "rimraf .turbo node_modules dist"
 	},
 	"devDependencies": {
+		"@w/tsconfig": "*",
 		"@swc/cli": "^0.1.57",
 		"@swc/core": "^1.2.241",
 		"@types/node": "^18.7.8",
 		"nodemon": "^2.0.19",
-		"ts-node": "^10.9.1",
-		"tsconfig-paths": "^4.1.0",
-		"@w/tsconfig": "*"
+		"rimraf": "^3.0.2",
+		"ts-node": "^10.9.1"
 	}
 }
