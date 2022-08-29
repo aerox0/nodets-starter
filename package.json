@@ -17,6 +17,7 @@
 	"scripts": {
 		"build": "turbo run build",
 		"dev": "turbo run dev --parallel",
+		"clean": "turbo run clean",
 		"bump": "standard-version --skip.tag",
 		"release": "git flow release start",
 		"pubpush": "git flow release finish"
