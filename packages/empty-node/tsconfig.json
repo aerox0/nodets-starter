@@ -3,6 +3,10 @@
 		"files": true,
 		"transpileOnly": true
 	},
+	"compilerOptions": {
+		"outDir": "dist"
+	},
 	"extends": "@w/tsconfig/node.json",
-	"include": ["."]
+	"exclude": ["node_modules"],
+	"include": ["src"]
 }

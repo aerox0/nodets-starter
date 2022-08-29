@@ -33,6 +33,9 @@ Using local environment
 # Install dependencies
 yarn/npm install
 
+# Build packages
+yarn build
+
 # Run app in dev mode (it will automatically run all packages and apps that have defined dev script in packages.json)
 yarn dev
 
@@ -40,4 +43,4 @@ yarn dev
 yarn build
 ```
 
-Note: dotenv isn't install by default
+Note: dotenv isn't installed by default
