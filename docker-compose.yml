@@ -1,9 +1,9 @@
 services:
-  core:
+  empty-node:
     build:
       context: .
-      dockerfile: ./apps/core/Dockerfile
+      dockerfile: ./apps/empty-node/Dockerfile
       target: development
     env_file:
-      - ./apps/core/.env
+      - ./apps/empty-node/.env
     restart: on-failure

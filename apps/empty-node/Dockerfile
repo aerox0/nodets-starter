@@ -5,7 +5,7 @@ RUN apk update
 WORKDIR /app
 RUN yarn global add turbo
 COPY . .
-RUN turbo prune --scope=core --docker
+RUN turbo prune --scope=empty-node --docker
 
 #
 FROM node:lts-alpine as development
@@ -19,7 +19,7 @@ COPY .gitignore .gitignore
 COPY turbo.json turbo.json
 
 RUN yarn install
-RUN yarn turbo run build --filter=core
+RUN yarn turbo run build --filter=empty-node
 
 #
 FROM node:lts-alpine as production
@@ -32,4 +32,4 @@ COPY --from=development /app .
 # RUN chown -R nodets:nodets ./
 # RUN chown -R nodets:nodets ./yarn.lock
 # USER nodets
-CMD ["node", "apps/core/dist/index.js"]
+CMD ["node", "apps/empty-node/dist/index.js"]
